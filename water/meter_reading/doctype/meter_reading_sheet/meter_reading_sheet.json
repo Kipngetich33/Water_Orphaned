@@ -1,0 +1,225 @@
+{
+ "autoname": "format:{billing_period}-{billing_area}",
+ "creation": "2021-09-08 15:45:53.152751",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "billing_period",
+  "meter_reader",
+  "column_break_4",
+  "billing_area_1",
+  "billing_area_2",
+  "billing_area_3",
+  "billing_area_4",
+  "billing_area_5",
+  "billing_area_6",
+  "billing_area_7",
+  "billing_area_8",
+  "billing_area_9",
+  "billing_area_10",
+  "selected_billing_area",
+  "billing_area",
+  "fetch_meter_reading",
+  "fetching_meter_readings",
+  "section_break_2",
+  "meter_reading_sheet_detail",
+  "other_section",
+  "billed"
+ ],
+ "fields": [
+  {
+   "fieldname": "billing_period",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Billing Period",
+   "options": "Billing Period",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meter_reader",
+   "fieldtype": "Link",
+   "label": "Meter Reader",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "meter_reading_sheet_detail",
+   "fieldtype": "Table",
+   "label": "Meter Reading Sheet Detail",
+   "options": "Meter Reading Sheet Detail"
+  },
+  {
+   "fieldname": "billing_area",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Billing Area ",
+   "options": "Billing Area",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nOpen\nClosed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fetch_meter_reading",
+   "fieldtype": "Button",
+   "label": "Fetch Meter Readings"
+  },
+  {
+   "default": "0",
+   "fieldname": "fetching_meter_readings",
+   "fieldtype": "Check",
+   "label": "fetching_meter_readings",
+   "no_copy": 1,
+   "options": "Meter Reading Sheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "billing_area_1",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 1)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_1",
+   "fieldname": "billing_area_2",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 2)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_2",
+   "fieldname": "billing_area_3",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 3)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_3",
+   "fieldname": "billing_area_4",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 4)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_4",
+   "fieldname": "billing_area_5",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 5)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_5",
+   "fieldname": "billing_area_6",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 6)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_6",
+   "fieldname": "billing_area_7",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 7)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_7",
+   "fieldname": "billing_area_8",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 8)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_8",
+   "fieldname": "billing_area_9",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 9)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_9",
+   "fieldname": "billing_area_10",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 10)",
+   "options": "Billing Area"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "other_section",
+   "fieldtype": "Section Break",
+   "label": "Other"
+  },
+  {
+   "default": "0",
+   "fieldname": "billed",
+   "fieldtype": "Check",
+   "label": "Billed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "selected_billing_area",
+   "fieldtype": "Heading",
+   "label": "Selected Billing Area"
+  }
+ ],
+ "modified": "2021-12-03 22:31:15.913383",
+ "modified_by": "Administrator",
+ "module": "Meter Reading",
+ "name": "Meter Reading Sheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Customer Care",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

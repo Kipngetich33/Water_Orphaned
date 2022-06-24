@@ -1,0 +1,143 @@
+{
+ "creation": "2021-08-03 12:42:51.966024",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "task_name",
+  "customer_account",
+  "created_from_common_tasks",
+  "common_task",
+  "tasks_created",
+  "is_group",
+  "column_break_6",
+  "task_type",
+  "estimate_turnaround_time_in_days",
+  "start_date",
+  "end_date",
+  "due_date",
+  "child_tasks_section",
+  "company_task_detail",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "label": "Task Name"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description "
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "depends_on": "is_group",
+   "fieldname": "company_task_detail",
+   "fieldtype": "Table",
+   "label": "Company Task Detail",
+   "options": "Company Task Detail"
+  },
+  {
+   "fieldname": "estimate_turnaround_time_in_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Estimate Turnaround Time in Days"
+  },
+  {
+   "default": "0",
+   "fieldname": "created_from_common_tasks",
+   "fieldtype": "Check",
+   "label": "Created From Common Tasks"
+  },
+  {
+   "depends_on": "created_from_common_tasks",
+   "fieldname": "common_task",
+   "fieldtype": "Link",
+   "label": "Common Task",
+   "options": "Common Tasks"
+  },
+  {
+   "default": "0",
+   "depends_on": "created_from_common_tasks",
+   "fieldname": "tasks_created",
+   "fieldtype": "Check",
+   "label": "Tasks Created",
+   "read_only": 1
+  },
+  {
+   "fieldname": "child_tasks_section",
+   "fieldtype": "Section Break",
+   "label": "Child Tasks"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "customer_account",
+   "fieldtype": "Link",
+   "label": "Customer Account",
+   "options": "Customer Account"
+  },
+  {
+   "fieldname": "task_type",
+   "fieldtype": "Select",
+   "label": "Task Type",
+   "options": "\nNew Connection\nReconnection\nActivation\nDisconnection\nPermanent Disconnection\nMeter Reading\nOther"
+  }
+ ],
+ "modified": "2021-10-25 17:33:53.550487",
+ "modified_by": "Administrator",
+ "module": "Job Card",
+ "name": "Company Task",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "task_name",
+ "track_changes": 1
+}

@@ -1,0 +1,288 @@
+{
+ "creation": "2021-08-27 14:26:07.271645",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "billing_area_section",
+  "confirmation_requires_billing_area",
+  "connection_details_settins_section",
+  "connection_requires_meter",
+  "connection_requires_installation_date",
+  "requires_meter_reading_on_installation",
+  "sanitation_details_section",
+  "requires_type_of_sanitation",
+  "requires_onsite_category",
+  "requires_type_of_septic",
+  "requires_category_of_septic",
+  "column_break_11",
+  "requires_septic_tank_accessibility",
+  "requires_type_of_pit_latrine",
+  "requires_category_type_of_pit_latrine",
+  "gps_details_section",
+  "requires_gps_confirm",
+  "requires_gps_cordinates",
+  "requires_gps_coordinate_of_the_meter_x",
+  "requires_gps_coordinate_of_the_t_junction_y",
+  "requires_x",
+  "requires_y",
+  "column_break_21",
+  "requires_latitude",
+  "requires_longitude",
+  "requires_altitude",
+  "requires_accuracy",
+  "billing_area_hierarchy_section",
+  "billing_area_1",
+  "billing_area_2",
+  "billing_area_3",
+  "billing_area_4",
+  "billing_area_5",
+  "billing_area_6",
+  "billing_area_7",
+  "billing_area_8",
+  "billing_area_9",
+  "billing_area_10"
+ ],
+ "fields": [
+  {
+   "fieldname": "billing_area_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Area Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "confirmation_requires_billing_area",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Billing Area"
+  },
+  {
+   "fieldname": "connection_details_settins_section",
+   "fieldtype": "Section Break",
+   "label": "Connection Details Settins"
+  },
+  {
+   "default": "0",
+   "fieldname": "connection_requires_meter",
+   "fieldtype": "Check",
+   "label": "Connection requires meter"
+  },
+  {
+   "default": "0",
+   "fieldname": "connection_requires_installation_date",
+   "fieldtype": "Check",
+   "label": "Connection requires Installation date"
+  },
+  {
+   "fieldname": "sanitation_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sanitation Details"
+  },
+  {
+   "fieldname": "gps_details_section",
+   "fieldtype": "Section Break",
+   "label": "GPS Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_gps_confirm",
+   "fieldtype": "Check",
+   "label": "Confirmation requires GPS Coordinates Confirmed Field "
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_type_of_sanitation",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Type of Sanitation"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_onsite_category",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires  Onsite Category"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_type_of_septic",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Type septic"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_category_of_septic",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Category of septic"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_septic_tank_accessibility",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Septic Tank Accessibility"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_type_of_pit_latrine",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Type of Pit Latrine"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_category_type_of_pit_latrine",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Category of pit latrine"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_gps_cordinates",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires GPS Coordinates"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_gps_coordinate_of_the_meter_x",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires GPS Coordinate of the Meter X"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_gps_coordinate_of_the_t_junction_y",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires GPS Coordinate of the T Junction Y "
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_x",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires X"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_y",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Y"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_latitude",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Latitude"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_longitude",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Longitude"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_altitude",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Altitude"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_accuracy",
+   "fieldtype": "Check",
+   "label": "Confirmation Requires Accuracy"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_meter_reading_on_installation",
+   "fieldtype": "Check",
+   "label": "Connection requires meter reading on Installation"
+  },
+  {
+   "fieldname": "billing_area_hierarchy_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Area Hierarchy "
+  },
+  {
+   "fieldname": "billing_area_1",
+   "fieldtype": "Data",
+   "label": "Billing Area (Level 1)"
+  },
+  {
+   "depends_on": "billing_area_1",
+   "fieldname": "billing_area_2",
+   "fieldtype": "Data",
+   "label": "Billing Area (Level 2)"
+  },
+  {
+   "depends_on": "billing_area_2",
+   "fieldname": "billing_area_3",
+   "fieldtype": "Data",
+   "label": "Billing Area (Level 3)"
+  },
+  {
+   "depends_on": "billing_area_3",
+   "fieldname": "billing_area_4",
+   "fieldtype": "Data",
+   "label": "Billing Area (Level 4)"
+  },
+  {
+   "depends_on": "billing_area_4",
+   "fieldname": "billing_area_5",
+   "fieldtype": "Data",
+   "label": "Billing Area (Level 5)"
+  },
+  {
+   "depends_on": "billing_area_5",
+   "fieldname": "billing_area_6",
+   "fieldtype": "Data",
+   "label": "Billing Area (Level 6)"
+  },
+  {
+   "depends_on": "billing_area_6",
+   "fieldname": "billing_area_7",
+   "fieldtype": "Data",
+   "label": "Billing Area (Level 7)"
+  },
+  {
+   "depends_on": "billing_area_7",
+   "fieldname": "billing_area_8",
+   "fieldtype": "Data",
+   "label": "Billing Area (Level  8)"
+  },
+  {
+   "depends_on": "billing_area_8",
+   "fieldname": "billing_area_9",
+   "fieldtype": "Data",
+   "label": "Billing Area (Level 9)"
+  },
+  {
+   "depends_on": "billing_area_9",
+   "fieldname": "billing_area_10",
+   "fieldtype": "Data",
+   "label": "Billing Area (Level 10)"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2021-09-14 16:27:46.885972",
+ "modified_by": "Administrator",
+ "module": "Meter Reading",
+ "name": "Meter Reading Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

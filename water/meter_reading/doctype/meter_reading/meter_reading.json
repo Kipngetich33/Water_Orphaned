@@ -1,0 +1,139 @@
+{
+ "creation": "2021-02-17 15:06:54.461472",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "meter",
+  "last_meter_reading",
+  "current_meter_reading",
+  "consumption",
+  "submission_datetime",
+  "other_section",
+  "latest_readings_for_meter",
+  "last_reading_doc",
+  "reason_for_irregular_reading",
+  "confirm_irregular_reading",
+  "readings_confirmed_by",
+  "confirm_readings",
+  "user_confirming_irregular_readings"
+ ],
+ "fields": [
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nOpen\nClosed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_meter_reading",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Current Meter Reading"
+  },
+  {
+   "fieldname": "consumption",
+   "fieldtype": "Float",
+   "label": "Consumption ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "submission_datetime",
+   "fieldtype": "Date",
+   "label": "Submission Datetime",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "latest_readings_for_meter",
+   "fieldtype": "Check",
+   "label": "Latest Readings for Meter?",
+   "read_only": 1
+  },
+  {
+   "fieldname": "meter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Meter",
+   "options": "Meter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_meter_reading",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Last Meter Reading",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "other_section",
+   "fieldtype": "Section Break",
+   "label": "Other"
+  },
+  {
+   "fieldname": "last_reading_doc",
+   "fieldtype": "Link",
+   "label": "Last Reading Doc",
+   "options": "Meter Reading",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "confirm_irregular_reading",
+   "fieldtype": "Check",
+   "label": "Irregular Readings Confirmed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reason_for_irregular_reading",
+   "fieldtype": "Small Text",
+   "label": "Reasons for confirming irregular reading"
+  },
+  {
+   "fieldname": "user_confirming_irregular_readings",
+   "fieldtype": "Link",
+   "label": "User confirming irregular readings",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "confirm_readings",
+   "fieldtype": "Button",
+   "label": "Confirm Readings"
+  },
+  {
+   "fieldname": "readings_confirmed_by",
+   "fieldtype": "Link",
+   "label": "Readings confirmed by",
+   "options": "User",
+   "read_only": 1
+  }
+ ],
+ "modified": "2021-09-15 15:47:50.293540",
+ "modified_by": "Administrator",
+ "module": "Meter Reading",
+ "name": "Meter Reading",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

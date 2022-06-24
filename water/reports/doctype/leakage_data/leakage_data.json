@@ -1,0 +1,62 @@
+{
+ "creation": "2021-10-21 18:26:22.508185",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_person_reporting",
+  "description",
+  "latitude",
+  "longitude",
+  "geolocation"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_person_reporting",
+   "fieldtype": "Data",
+   "label": "Name of Person Reporting"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description "
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "geolocation",
+   "fieldtype": "Geolocation",
+   "label": "Geolocation"
+  }
+ ],
+ "modified": "2021-10-21 18:26:33.545273",
+ "modified_by": "Administrator",
+ "module": "Reports",
+ "name": "Leakage Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

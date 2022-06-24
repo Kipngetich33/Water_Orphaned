@@ -1,0 +1,129 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2021-08-03 12:41:32.815446",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "custom_account_number",
+  "naming_series",
+  "full_name",
+  "phone_number",
+  "column_break_4",
+  "id_no",
+  "customer_type",
+  "customer_details",
+  "other_section",
+  "status_transitioning",
+  "previous_status",
+  "registration_complete"
+ ],
+ "fields": [
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nDraft\nPending Connection\nConnected\nPending Activation\nActive\nPending Disconnection\nDisconnected\nPending Permanent Disconnection\nDormant\n",
+   "read_only": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "other_section",
+   "fieldtype": "Section Break",
+   "label": "Other"
+  },
+  {
+   "default": "0",
+   "fieldname": "status_transitioning",
+   "fieldtype": "Check",
+   "label": "Status Transitioning ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_status",
+   "fieldtype": "Data",
+   "label": "Previous Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_details",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Customer Details",
+   "options": "Customer Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "registration_complete",
+   "fieldtype": "Check",
+   "label": "Registration Complete",
+   "read_only": 1
+  },
+  {
+   "default": "CUS-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CUS-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "custom_account_number",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Custom Account Number"
+  },
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Link",
+   "label": "Customer Type",
+   "options": "Customer Type"
+  },
+  {
+   "fieldname": "id_no",
+   "fieldtype": "Data",
+   "label": "ID Number"
+  }
+ ],
+ "modified": "2022-03-17 17:45:29.482243",
+ "modified_by": "Administrator",
+ "module": "Billing",
+ "name": "Customer Account",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

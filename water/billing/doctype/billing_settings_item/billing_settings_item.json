@@ -1,0 +1,251 @@
+{
+ "autoname": "field:customer_type",
+ "creation": "2022-03-17 13:28:05.928615",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_type",
+  "section_break_3",
+  "application",
+  "fees_required",
+  "application_fee",
+  "application_task",
+  "section_break_initial",
+  "initial_connection",
+  "initial_connection_fees_required",
+  "connection_amount",
+  "connection_task",
+  "section_break_5",
+  "after_temporary_disconnection_column",
+  "reconnection",
+  "fees_required_after_temporary_disconnection",
+  "reconnection_amount_after_temporary_disconnection",
+  "reconnection_task_after_temporary_disconnection",
+  "after_permanent_disconnection_column",
+  "reconnection_after_permanent_disconnection",
+  "fee_required_after_permanent_disconnection",
+  "reconnection_amount_after_permanent_disconnection",
+  "reconnection_task_after_permanent_disconnection",
+  "section_break_10",
+  "activation",
+  "activation_fees_required",
+  "activation_amount",
+  "activation_task",
+  "section_break_15",
+  "disconnection",
+  "disconnection_task",
+  "disconnection_grace_period",
+  "section_break_18",
+  "permanent_disconnection",
+  "permanent_disconnection_task"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Link",
+   "label": "Customer Type",
+   "options": "Customer Type",
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "application",
+   "fieldtype": "Heading",
+   "label": "Application"
+  },
+  {
+   "default": "0",
+   "fieldname": "fees_required",
+   "fieldtype": "Check",
+   "label": "Fees Required"
+  },
+  {
+   "depends_on": "fees_required",
+   "fieldname": "application_fee",
+   "fieldtype": "Link",
+   "label": "Application Fee",
+   "options": "Bill Item"
+  },
+  {
+   "fieldname": "application_task",
+   "fieldtype": "Link",
+   "label": "Application Task",
+   "options": "Common Tasks"
+  },
+  {
+   "fieldname": "section_break_initial",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "initial_connection",
+   "fieldtype": "Heading",
+   "label": "Initial Connection"
+  },
+  {
+   "default": "0",
+   "fieldname": "initial_connection_fees_required",
+   "fieldtype": "Check",
+   "label": "Fees Required"
+  },
+  {
+   "depends_on": "initial_connection_fees_required",
+   "fieldname": "connection_amount",
+   "fieldtype": "Link",
+   "label": "Connection Amount ",
+   "options": "Bill Item"
+  },
+  {
+   "fieldname": "connection_task",
+   "fieldtype": "Link",
+   "label": "Connection Task",
+   "options": "Common Tasks"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reconnection",
+   "fieldtype": "Heading",
+   "label": "Re-Connection (After Temporary Disconnection)"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "activation",
+   "fieldtype": "Heading",
+   "label": "Activation"
+  },
+  {
+   "default": "0",
+   "fieldname": "activation_fees_required",
+   "fieldtype": "Check",
+   "label": "Fees Required"
+  },
+  {
+   "fieldname": "activation_amount",
+   "fieldtype": "Link",
+   "label": "Activation Amount",
+   "options": "Bill Item"
+  },
+  {
+   "fieldname": "activation_task",
+   "fieldtype": "Link",
+   "label": "Activation Task",
+   "options": "Common Tasks"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "disconnection",
+   "fieldtype": "Heading",
+   "label": "Disconnection"
+  },
+  {
+   "fieldname": "disconnection_task",
+   "fieldtype": "Link",
+   "label": "Disconnection Task",
+   "options": "Common Tasks"
+  },
+  {
+   "fieldname": "disconnection_grace_period",
+   "fieldtype": "Int",
+   "label": "Grace Period for Disconnected Customers (In days)"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "permanent_disconnection",
+   "fieldtype": "Heading",
+   "label": "Permanent Disconnection"
+  },
+  {
+   "fieldname": "permanent_disconnection_task",
+   "fieldtype": "Link",
+   "label": "Permanent Disconnection Task",
+   "options": "Common Tasks"
+  },
+  {
+   "fieldname": "after_temporary_disconnection_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "fees_required_after_temporary_disconnection",
+   "fieldtype": "Check",
+   "label": "Fees Required"
+  },
+  {
+   "depends_on": "fees_required_after_temporary_disconnection",
+   "fieldname": "reconnection_amount_after_temporary_disconnection",
+   "fieldtype": "Link",
+   "label": "Re-Connection Amount ",
+   "options": "Bill Item"
+  },
+  {
+   "fieldname": "reconnection_task_after_temporary_disconnection",
+   "fieldtype": "Link",
+   "label": "Reconnection Task",
+   "options": "Common Tasks"
+  },
+  {
+   "fieldname": "after_permanent_disconnection_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "fee_required_after_permanent_disconnection",
+   "fieldtype": "Check",
+   "label": "Fee Required"
+  },
+  {
+   "depends_on": "fee_required_after_permanent_disconnection",
+   "fieldname": "reconnection_amount_after_permanent_disconnection",
+   "fieldtype": "Link",
+   "label": "Re-Connection Amount",
+   "options": "Bill Item"
+  },
+  {
+   "fieldname": "reconnection_task_after_permanent_disconnection",
+   "fieldtype": "Link",
+   "label": "Reconnection Task",
+   "options": "Common Tasks"
+  },
+  {
+   "fieldname": "reconnection_after_permanent_disconnection",
+   "fieldtype": "Heading",
+   "label": "Re-Connection (After Permanent Disconnection)"
+  }
+ ],
+ "modified": "2022-03-18 16:50:08.582205",
+ "modified_by": "Administrator",
+ "module": "Billing",
+ "name": "Billing Settings Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

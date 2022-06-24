@@ -1,0 +1,58 @@
+{
+ "creation": "2021-09-20 12:40:01.948834",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "billign_meter_reading_sheets_section",
+  "meter_reading_sheet",
+  "bill_selected_sheet",
+  "billing_the_sheet"
+ ],
+ "fields": [
+  {
+   "fieldname": "billign_meter_reading_sheets_section",
+   "fieldtype": "Section Break",
+   "label": "Billign Meter Reading Sheets"
+  },
+  {
+   "fieldname": "meter_reading_sheet",
+   "fieldtype": "Link",
+   "label": "Select Meter Reading Sheet",
+   "options": "Meter Reading Sheet"
+  },
+  {
+   "fieldname": "bill_selected_sheet",
+   "fieldtype": "Button",
+   "label": "Bill Selected Sheet"
+  },
+  {
+   "default": "0",
+   "fieldname": "billing_the_sheet",
+   "fieldtype": "Check",
+   "label": "Billing the Sheet",
+   "read_only": 1
+  }
+ ],
+ "issingle": 1,
+ "modified": "2021-09-20 13:08:01.504628",
+ "modified_by": "Administrator",
+ "module": "Billing",
+ "name": "Billing Actions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

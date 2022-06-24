@@ -1,0 +1,50 @@
+{
+ "autoname": "field:task_name",
+ "creation": "2021-08-03 12:42:51.966024",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task_name",
+  "common_task_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "common_task_detail",
+   "fieldtype": "Table",
+   "label": "Company Task Detail",
+   "options": "Common Task Detail",
+   "reqd": 1
+  }
+ ],
+ "modified": "2021-08-12 18:11:25.847644",
+ "modified_by": "Administrator",
+ "module": "Job Card",
+ "name": "Common Tasks",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

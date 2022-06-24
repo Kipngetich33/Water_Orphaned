@@ -1,0 +1,89 @@
+{
+ "autoname": "field:dma_name",
+ "creation": "2021-11-04 19:00:18.232544",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dma_name",
+  "meter",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_dma"
+ ],
+ "fields": [
+  {
+   "fieldname": "dma_name",
+   "fieldtype": "Data",
+   "label": "DMA Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "meter",
+   "fieldtype": "Link",
+   "label": "Meter ",
+   "options": "Meter"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "DMA"
+  },
+  {
+   "fieldname": "parent_dma",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Parent DMA",
+   "options": "DMA"
+  }
+ ],
+ "is_tree": 1,
+ "modified": "2021-11-04 21:26:01.414301",
+ "modified_by": "Administrator",
+ "module": "Meter Reading",
+ "name": "DMA",
+ "nsm_parent_field": "parent_dma",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,91 @@
+{
+ "autoname": "field:meter_serial",
+ "creation": "2021-08-03 12:49:16.739956",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "meter_serial",
+  "status",
+  "meter_body_material",
+  "meter_inlet_diameter",
+  "meter_size_inches",
+  "column_break_7",
+  "meter_brand",
+  "meter_class",
+  "initial_meter_reading"
+ ],
+ "fields": [
+  {
+   "fieldname": "meter_serial",
+   "fieldtype": "Data",
+   "label": "Meter Serial",
+   "unique": 1
+  },
+  {
+   "fieldname": "meter_body_material",
+   "fieldtype": "Data",
+   "label": "Meter body Material ",
+   "options": "\nMetal \nPlastic"
+  },
+  {
+   "fieldname": "meter_inlet_diameter",
+   "fieldtype": "Select",
+   "label": "Meter Inlet Diameter (Inches)",
+   "options": "\n0.5 (1/2 \")\n0.75 (3/4 \")\n1.0 (1 \")\n1.5 (1 & 1/2 \")\n1.75 (1 & 3/4 \" )\n2.0 (2 \")\n3.0 (3)\n4.0 (4)"
+  },
+  {
+   "fieldname": "meter_size_inches",
+   "fieldtype": "Select",
+   "label": "Meter Size (Inches)",
+   "options": "\n0.5 (1/2 \")\n0.75 ( 3/4 \")\n1.0 (1 \")"
+  },
+  {
+   "fieldname": "meter_brand",
+   "fieldtype": "Data",
+   "label": "Meter Brand"
+  },
+  {
+   "fieldname": "meter_class",
+   "fieldtype": "Select",
+   "label": "Meter Class",
+   "options": "\nA\nB\nC\nD\nMeter class not indicated"
+  },
+  {
+   "fieldname": "initial_meter_reading",
+   "fieldtype": "Float",
+   "label": "Initial Meter Reading"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Meter Status"
+  }
+ ],
+ "modified": "2021-10-01 13:53:43.005506",
+ "modified_by": "Administrator",
+ "module": "Meter Reading",
+ "name": "Meter",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

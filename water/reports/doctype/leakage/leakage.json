@@ -1,0 +1,89 @@
+{
+ "creation": "2021-11-03 19:30:28.759196",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "submission_date",
+  "utility",
+  "name_of_person_reporting",
+  "description",
+  "geolocation_data",
+  "latitude",
+  "longitude",
+  "geolocation"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_person_reporting",
+   "fieldtype": "Data",
+   "label": "Name of Person Reporting"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description "
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "geolocation",
+   "fieldtype": "Geolocation",
+   "label": "Geolocation"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "Id"
+  },
+  {
+   "fieldname": "submission_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "geolocation_data",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Geolocation Data"
+  },
+  {
+   "fieldname": "utility",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company/Water Utility"
+  }
+ ],
+ "modified": "2021-11-04 12:04:03.684243",
+ "modified_by": "Administrator",
+ "module": "Reports",
+ "name": "Leakage",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

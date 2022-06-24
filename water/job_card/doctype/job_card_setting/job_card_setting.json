@@ -1,0 +1,45 @@
+{
+ "creation": "2021-08-18 15:01:50.436769",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "departments_n_users",
+  "department_detail_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "departments_n_users",
+   "fieldtype": "Heading",
+   "label": "Departments and Users"
+  },
+  {
+   "fieldname": "department_detail_table",
+   "fieldtype": "Table",
+   "label": "Department Detail Table",
+   "options": "Department Detail Table"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2021-08-18 15:01:50.436769",
+ "modified_by": "Administrator",
+ "module": "Job Card",
+ "name": "Job Card Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

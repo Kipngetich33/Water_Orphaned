@@ -1,0 +1,71 @@
+<!-- add page styling here -->
+<head>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous"> -->
+</head>
+
+<style>
+    #breadcrumb_title{
+        color:grey;
+    }
+
+    .loader {
+			border: 16px solid #f3f3f3;
+			border-radius: 50%;
+			border-top:16px solid #5E64FF;
+			width: 120px;
+			height: 120px;
+			-webkit-animation: spin 2s linear infinite; /* Safari */
+			animation: spin 2s linear infinite;
+			margin: auto;
+		}
+    
+    /* Safari */
+    @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
+</style>
+<!-- this is the dashboard section -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="jumbotron">
+            <!-- title section and breadcrumbs -->
+            <h1 class="display-5" id="cis_title"></h1>
+            <!-- add breadcrumbs -->
+            <span style="font-weight:bold;">
+                <a href="/desk">Desk</a> >
+                <a href="/data_analysis">Data Analysis</a> >
+                <a href="/database_analysis" id='breadcrumb_title'></a>
+            </span>
+            <hr class="my-4">
+            <!-- dashboard section -->
+            <div id="dashboard_cards_section"></div>
+            <!-- <div class="card" style="margin:10px;padding:10px;">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body" style="text-align:center;">
+                    <div class="col-md-6" style="height:200px;">
+                        <canvas id="myChart"></canvas>
+                      </div>
+                </div>
+            </div> -->
+            <!-- <div class="card" style="margin:10px;">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div> -->
+        </div>        
+    </div>
+</div>
+
+<!-- add charting js library to dashboard page -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+<script src="/assets/js/chart.js"></script>
+

@@ -1,0 +1,85 @@
+{
+ "creation": "2021-08-20 09:55:42.797083",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ona_table_cis",
+  "water_utility",
+  "language",
+  "date_of_last_fetched_cis",
+  "fetching_cis_data_on",
+  "fetch_cis_data",
+  "fetching_new_entries",
+  "fetch_new_entries"
+ ],
+ "fields": [
+  {
+   "fieldname": "ona_table_cis",
+   "fieldtype": "Data",
+   "label": "ONA CIS Table"
+  },
+  {
+   "fieldname": "water_utility",
+   "fieldtype": "Data",
+   "label": "Water Utility/Operator"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "label": "Language",
+   "options": "Language"
+  },
+  {
+   "fieldname": "date_of_last_fetched_cis",
+   "fieldtype": "Datetime",
+   "label": "Date of Last Fetched CIS "
+  },
+  {
+   "default": "0",
+   "fieldname": "fetching_cis_data_on",
+   "fieldtype": "Check",
+   "label": "Fetching CIS Data ON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fetch_cis_data",
+   "fieldtype": "Button",
+   "label": "Fetch CIS Data"
+  },
+  {
+   "default": "0",
+   "fieldname": "fetching_new_entries",
+   "fieldtype": "Check",
+   "label": "Fetching New Entries",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fetch_new_entries",
+   "fieldtype": "Button",
+   "label": "Fetch New Entries (Manual)"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2021-09-03 08:06:33.858939",
+ "modified_by": "Administrator",
+ "module": "CIS",
+ "name": "CIS Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

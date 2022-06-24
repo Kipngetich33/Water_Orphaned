@@ -1,0 +1,690 @@
+{
+ "creation": "2020-07-29 13:58:50.848236",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ona_id_section_section",
+  "cis_project",
+  "_id",
+  "collectors_details_section",
+  "collector_name",
+  "date",
+  "service_area_details_section",
+  "zone",
+  "sub_zone",
+  "housing_details_section",
+  "type_of_housing",
+  "type_of_premises",
+  "type_of_residential_or_mixed_premise",
+  "number_of_people_in_the_household",
+  "type_of_commercial_premise",
+  "type_of_institution",
+  "type_of_health_facility",
+  "category_of_health_facility",
+  "category_of_institution",
+  "number_of_people_in_institution",
+  "email_of_the_institution",
+  "average_number_of_people_served_at_the_fontenerio_per_day",
+  "owner_landlord_details",
+  "first_name_landlord",
+  "land_lord_or_owner_surname",
+  "land_lord_or_owner_cell",
+  "details_of_the_connection_or_potential_connection_section",
+  "customer_details_same_as_landlord",
+  "different_customer_name",
+  "different_customer_cell",
+  "does_customer_have_a_connection",
+  "customer_have_a_connection",
+  "account_no",
+  "account_name",
+  "total_number_of__households_in_the_mdu",
+  "average_number_of_people_in_each_household_",
+  "billing_status",
+  "why_customer_is_not_billed",
+  "frequency_of_bill_delivery",
+  "connection_status",
+  "how_often_do_you_receive_water",
+  "days_with_supply",
+  "daily_hours",
+  "hours_with_supply_daily",
+  "last_time_to_receive_water",
+  "storage_tank_available",
+  "storage_tank_location",
+  "storage_tank_size",
+  "disconnection_duration",
+  "water_sources",
+  "name_of_sssp",
+  "name_community_project_",
+  "other_alternative_source",
+  "water_connection",
+  "meter_location",
+  "why_access_to_meter_location_is_denied",
+  "meter_status",
+  "meter_settlement",
+  "meter_material",
+  "inlet_pipe_size",
+  "meter_size",
+  "meter_position",
+  "meter_flow_direction",
+  "item",
+  "valve_before_meter",
+  "valve_after_meter",
+  "meter_seal",
+  "connection_seal",
+  "meter_liners",
+  "pipe_material",
+  "state_of_the_meter",
+  "meter_brand",
+  "meter_serial_no",
+  "meter_class",
+  "readings_of_the_meter",
+  "metering_problems",
+  "meter_read_monthly",
+  "installation_date_known",
+  "tentative_year_of_installation",
+  "installation_date",
+  "customer_willing_to_be_connected",
+  "approximate_distance",
+  "number_of_people_in_multi_dwelling_household",
+  "water_source",
+  "name_of_sssp_",
+  "name_community_project",
+  "sanitation_details_section",
+  "type_of_sanitation",
+  "onsite_category",
+  "choose_type_of_pit_latrine",
+  "category_type_of_pit_latrine",
+  "choose_type_septic",
+  "category_of_septic",
+  "septic_tank_system_accessibility",
+  "choose_sewer_type",
+  "customer_satisfaction_section",
+  "overall_service",
+  "hours_of_supply_per_day",
+  "water_quality",
+  "water_pressure",
+  "cost_of_water",
+  "bill",
+  "repairs",
+  "response_to_filed_complaints",
+  "reported_leakages",
+  "gps_cordinates_remarks",
+  "gps_cordinates",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "ona_id_section_section",
+   "fieldtype": "Section Break",
+   "label": "General Section"
+  },
+  {
+   "fieldname": "cis_project",
+   "fieldtype": "Link",
+   "label": "CIS Project",
+   "options": "CIS Project"
+  },
+  {
+   "fieldname": "_id",
+   "fieldtype": "Data",
+   "label": "ID"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "collectors_details_section",
+   "fieldtype": "Section Break",
+   "label": "Collectors Details"
+  },
+  {
+   "fieldname": "collector_name",
+   "fieldtype": "Data",
+   "label": "Data collector's name"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "service_area_details_section",
+   "fieldtype": "Section Break",
+   "label": "Service Area Details"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Data",
+   "label": "Select zone"
+  },
+  {
+   "fieldname": "sub_zone",
+   "fieldtype": "Data",
+   "label": "Select sub zone"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "housing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Housing Details"
+  },
+  {
+   "fieldname": "type_of_housing",
+   "fieldtype": "Data",
+   "label": "Type of housing"
+  },
+  {
+   "fieldname": "type_of_premises",
+   "fieldtype": "Data",
+   "label": "Type of premises"
+  },
+  {
+   "fieldname": "type_of_residential_or_mixed_premise",
+   "fieldtype": "Data",
+   "label": "Type of residential/mixed premise"
+  },
+  {
+   "fieldname": "number_of_people_in_the_household",
+   "fieldtype": "Data",
+   "label": "Number of people in the household"
+  },
+  {
+   "fieldname": "type_of_commercial_premise",
+   "fieldtype": "Data",
+   "label": "Type of commercial premise"
+  },
+  {
+   "fieldname": "type_of_institution",
+   "fieldtype": "Data",
+   "label": "Type of institution"
+  },
+  {
+   "fieldname": "type_of_health_facility",
+   "fieldtype": "Data",
+   "label": "Type of health facility"
+  },
+  {
+   "fieldname": "category_of_health_facility",
+   "fieldtype": "Data",
+   "label": "Category of health_facility"
+  },
+  {
+   "fieldname": "category_of_institution",
+   "fieldtype": "Data",
+   "label": "Category of institution"
+  },
+  {
+   "fieldname": "number_of_people_in_institution",
+   "fieldtype": "Data",
+   "label": "Number of people in school/college/university"
+  },
+  {
+   "fieldname": "email_of_the_institution",
+   "fieldtype": "Data",
+   "label": "Email of the Institution"
+  },
+  {
+   "fieldname": "average_number_of_people_served_at_the_fontenerio_per_day",
+   "fieldtype": "Data",
+   "label": "Average number of people served at the fontenerio per day"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "owner_landlord_details",
+   "fieldtype": "Section Break",
+   "label": "Owner / landlord details"
+  },
+  {
+   "fieldname": "first_name_landlord",
+   "fieldtype": "Data",
+   "label": "First name"
+  },
+  {
+   "fieldname": "land_lord_or_owner_surname",
+   "fieldtype": "Data",
+   "label": "Surname"
+  },
+  {
+   "fieldname": "land_lord_or_owner_cell",
+   "fieldtype": "Data",
+   "label": "Cell"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "details_of_the_connection_or_potential_connection_section",
+   "fieldtype": "Section Break",
+   "label": "Details of the connection or potential connection"
+  },
+  {
+   "fieldname": "customer_details_same_as_landlord",
+   "fieldtype": "Data",
+   "label": "Customer/potential customer details same as owner/landlord details?"
+  },
+  {
+   "fieldname": "different_customer_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "different_customer_cell",
+   "fieldtype": "Data",
+   "label": "Cell"
+  },
+  {
+   "fieldname": "does_customer_have_a_connection",
+   "fieldtype": "Data",
+   "label": "Does the customer have a connection/account with Mandlakazi Water Supply?"
+  },
+  {
+   "fieldname": "customer_have_a_connection",
+   "fieldtype": "Data",
+   "label": "Does the customer know their account number?"
+  },
+  {
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "label": "Account No"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "label": "A/c name"
+  },
+  {
+   "fieldname": "total_number_of__households_in_the_mdu",
+   "fieldtype": "Data",
+   "label": "Total number of households in the MDU"
+  },
+  {
+   "fieldname": "average_number_of_people_in_each_household_",
+   "fieldtype": "Data",
+   "label": "Average number of people in each household"
+  },
+  {
+   "fieldname": "billing_status",
+   "fieldtype": "Data",
+   "label": "Billing Status"
+  },
+  {
+   "fieldname": "why_customer_is_not_billed",
+   "fieldtype": "Data",
+   "label": "Why is the customer not billed?"
+  },
+  {
+   "fieldname": "frequency_of_bill_delivery",
+   "fieldtype": "Data",
+   "label": "Frequency of bill delivery"
+  },
+  {
+   "fieldname": "connection_status",
+   "fieldtype": "Data",
+   "label": "Connection status"
+  },
+  {
+   "fieldname": "how_often_do_you_receive_water",
+   "fieldtype": "Data",
+   "label": "How often do you receive water?"
+  },
+  {
+   "fieldname": "days_with_supply",
+   "fieldtype": "Data",
+   "label": "How many days in a week do you have water supply?"
+  },
+  {
+   "fieldname": "daily_hours",
+   "fieldtype": "Data",
+   "label": "Give an estimate of daily hours of supply"
+  },
+  {
+   "fieldname": "hours_with_supply_daily",
+   "fieldtype": "Data",
+   "label": "What hours is water mostly supplied?"
+  },
+  {
+   "fieldname": "last_time_to_receive_water",
+   "fieldtype": "Data",
+   "label": "When was the last time you received water?"
+  },
+  {
+   "fieldname": "storage_tank_available",
+   "fieldtype": "Data",
+   "label": "Do you have a storage tank?"
+  },
+  {
+   "fieldname": "storage_tank_location",
+   "fieldtype": "Data",
+   "label": "Location of the storage tank"
+  },
+  {
+   "fieldname": "storage_tank_size",
+   "fieldtype": "Data",
+   "label": "Size of storage tank"
+  },
+  {
+   "fieldname": "disconnection_duration",
+   "fieldtype": "Data",
+   "label": "How long has the connection been inactive?"
+  },
+  {
+   "fieldname": "water_sources",
+   "fieldtype": "Data",
+   "label": "Alternative source of water"
+  },
+  {
+   "fieldname": "name_of_sssp",
+   "fieldtype": "Data",
+   "label": "Name of Small Scale Service Provider(SSSP)"
+  },
+  {
+   "fieldname": "name_community_project_",
+   "fieldtype": "Data",
+   "label": "Name of community project"
+  },
+  {
+   "fieldname": "other_alternative_source",
+   "fieldtype": "Data",
+   "label": "Other Alternative Source"
+  },
+  {
+   "fieldname": "water_connection",
+   "fieldtype": "Data",
+   "label": "Water meter connected?"
+  },
+  {
+   "fieldname": "meter_location",
+   "fieldtype": "Data",
+   "label": "Meter location"
+  },
+  {
+   "fieldname": "why_access_to_meter_location_is_denied",
+   "fieldtype": "Data",
+   "label": "Indicate how access to meter location is denied"
+  },
+  {
+   "fieldname": "meter_status",
+   "fieldtype": "Data",
+   "label": "Meter status"
+  },
+  {
+   "fieldname": "meter_settlement",
+   "fieldtype": "Data",
+   "label": "Settlement of the meter"
+  },
+  {
+   "fieldname": "meter_material",
+   "fieldtype": "Data",
+   "label": "Meter body Material"
+  },
+  {
+   "fieldname": "inlet_pipe_size",
+   "fieldtype": "Data",
+   "label": "Meter inlet pipe diameter(Inches)"
+  },
+  {
+   "fieldname": "meter_size",
+   "fieldtype": "Data",
+   "label": "Meter size(inches)"
+  },
+  {
+   "fieldname": "meter_position",
+   "fieldtype": "Data",
+   "label": "Meter position"
+  },
+  {
+   "fieldname": "meter_flow_direction",
+   "fieldtype": "Data",
+   "label": "Meter flow direction"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "label": "Item"
+  },
+  {
+   "fieldname": "valve_before_meter",
+   "fieldtype": "Data",
+   "label": "Valve before meter"
+  },
+  {
+   "fieldname": "valve_after_meter",
+   "fieldtype": "Data",
+   "label": "Valve after meter"
+  },
+  {
+   "fieldname": "meter_seal",
+   "fieldtype": "Data",
+   "label": "Meter seal"
+  },
+  {
+   "fieldname": "connection_seal",
+   "fieldtype": "Data",
+   "label": "Connection seal"
+  },
+  {
+   "fieldname": "meter_liners",
+   "fieldtype": "Data",
+   "label": "Meter liners"
+  },
+  {
+   "fieldname": "pipe_material",
+   "fieldtype": "Data",
+   "label": "Pipe material"
+  },
+  {
+   "fieldname": "state_of_the_meter",
+   "fieldtype": "Data",
+   "label": "State of the meter"
+  },
+  {
+   "fieldname": "meter_brand",
+   "fieldtype": "Data",
+   "label": "Meter Brand"
+  },
+  {
+   "fieldname": "meter_serial_no",
+   "fieldtype": "Data",
+   "label": "Meter Serial No"
+  },
+  {
+   "fieldname": "meter_class",
+   "fieldtype": "Data",
+   "label": "Meter Class"
+  },
+  {
+   "fieldname": "readings_of_the_meter",
+   "fieldtype": "Data",
+   "label": "Readings of the meter"
+  },
+  {
+   "fieldname": "metering_problems",
+   "fieldtype": "Data",
+   "label": "Metering problems"
+  },
+  {
+   "fieldname": "meter_read_monthly",
+   "fieldtype": "Data",
+   "label": "Is meter read every month?"
+  },
+  {
+   "fieldname": "installation_date_known",
+   "fieldtype": "Data",
+   "label": "Meter installation date known?"
+  },
+  {
+   "fieldname": "tentative_year_of_installation",
+   "fieldtype": "Data",
+   "label": "Give tentative year of installation"
+  },
+  {
+   "fieldname": "installation_date",
+   "fieldtype": "Data",
+   "label": "Date of installation (if known)"
+  },
+  {
+   "fieldname": "customer_willing_to_be_connected",
+   "fieldtype": "Data",
+   "label": "Is the customer willing to be connected?"
+  },
+  {
+   "fieldname": "approximate_distance",
+   "fieldtype": "Data",
+   "label": "Approximate distance to the nearest connected premise"
+  },
+  {
+   "fieldname": "number_of_people_in_multi_dwelling_household",
+   "fieldtype": "Data",
+   "label": "Total number of households in the MDU"
+  },
+  {
+   "fieldname": "water_source",
+   "fieldtype": "Data",
+   "label": "Alternative source of water"
+  },
+  {
+   "fieldname": "name_of_sssp_",
+   "fieldtype": "Data",
+   "label": "Name of Small Scale Service Provider(SSSP)"
+  },
+  {
+   "fieldname": "name_community_project",
+   "fieldtype": "Data",
+   "label": "Name of community project"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sanitation_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sanitation Details"
+  },
+  {
+   "fieldname": "type_of_sanitation",
+   "fieldtype": "Data",
+   "label": "Type of sanitation"
+  },
+  {
+   "fieldname": "onsite_category",
+   "fieldtype": "Data",
+   "label": "Onsite category"
+  },
+  {
+   "fieldname": "choose_type_of_pit_latrine",
+   "fieldtype": "Data",
+   "label": "Choose type of pit latrine"
+  },
+  {
+   "fieldname": "category_type_of_pit_latrine",
+   "fieldtype": "Data",
+   "label": "Category type of pit latrine"
+  },
+  {
+   "fieldname": "choose_type_septic",
+   "fieldtype": "Data",
+   "label": "Choose type septic"
+  },
+  {
+   "fieldname": "category_of_septic",
+   "fieldtype": "Data",
+   "label": "Category of septic"
+  },
+  {
+   "fieldname": "septic_tank_system_accessibility",
+   "fieldtype": "Data",
+   "label": "Septic tank system accessibility"
+  },
+  {
+   "fieldname": "choose_sewer_type",
+   "fieldtype": "Data",
+   "label": "Choose sewer type"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "customer_satisfaction_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Satisfaction"
+  },
+  {
+   "fieldname": "overall_service",
+   "fieldtype": "Data",
+   "label": "Overall service"
+  },
+  {
+   "fieldname": "hours_of_supply_per_day",
+   "fieldtype": "Data",
+   "label": "Hours of supply per day"
+  },
+  {
+   "fieldname": "water_quality",
+   "fieldtype": "Data",
+   "label": "Water quality/ colour"
+  },
+  {
+   "fieldname": "water_pressure",
+   "fieldtype": "Data",
+   "label": "Water pressure"
+  },
+  {
+   "fieldname": "cost_of_water",
+   "fieldtype": "Data",
+   "label": "Cost of water"
+  },
+  {
+   "fieldname": "bill",
+   "fieldtype": "Data",
+   "label": "Bills"
+  },
+  {
+   "fieldname": "repairs",
+   "fieldtype": "Data",
+   "label": "Quality of repairs"
+  },
+  {
+   "fieldname": "response_to_filed_complaints",
+   "fieldtype": "Data",
+   "label": "Response to filed complaints"
+  },
+  {
+   "fieldname": "reported_leakages",
+   "fieldtype": "Data",
+   "label": "Response to reported leakages"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "gps_cordinates_remarks",
+   "fieldtype": "Section Break",
+   "label": "GPS Cordinate && Remarks "
+  },
+  {
+   "fieldname": "gps_cordinates",
+   "fieldtype": "Data",
+   "label": "GPS cordinates"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "modified": "2021-08-03 12:34:00.752283",
+ "modified_by": "Administrator",
+ "module": "Water",
+ "name": "CIS Data",
+ "owner": "kipngetich@upande.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

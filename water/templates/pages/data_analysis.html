@@ -1,0 +1,203 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="jumbotron">
+            <h1 class="display-5">
+                CIS and Database Analysis
+                <!-- CIS e análise de banco de dados -->
+            </h1>
+            
+            <!-- add breadcrumbs -->
+            <span style="font-weight:bold;">
+                <a href="/desk">Desk</a> >
+                <a href="/data_analysis" style="color:grey">
+                    CIS and Database Analysis
+                    <!-- CIS e análise de banco de dados -->
+                </a>
+            </span>
+            
+            <hr class="my-4">
+            <div style="padding:2%;">
+                <h5>
+                    1. CIS Data Analysis 
+                    <!-- 1. Análise de Dados CIS -->
+                <button type="button" class="btn btn-info" style="float:right;font-size:12px;" data-toggle="collapse" href="#cis_analysis_collapsable" role="button" aria-expanded="false" aria-controls="cis_analysis_collapsable">
+                    View / Toggle
+                    <!-- Ver / Alternar -->
+                </button>
+                </h5>
+                <hr>
+                
+                <!-- beginning of collapse section -->
+                <div id="cis_analysis_collapsable" class="collapse" >
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            Master Data
+                            <!-- Dados mestre -->
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="master_data" onclick="cis_page_redirect_function(this)">
+                                View
+                                <!-- Visualizar -->
+                            </button>
+                        </li>
+                        <!-- <li class="list-group-item">
+                            Summary Figure
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="summary_figure" onclick="cis_page_redirect_function(this)">
+                                View
+                            </button>
+                        </li> -->
+                        <!-- <li class="list-group-item">
+                            Analysis Guide Table
+                            Tabela do Guia de Análise
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="analysis_guide_table" onclick="cis_page_redirect_function(this)">
+                                View
+                                Visualizar
+                            </button>
+                        </li> -->
+                        <li class="list-group-item">
+                            Dashboard
+                            <!-- Painel -->
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="dashboard" onclick="cis_page_redirect_function(this)">
+                                View
+                                <!-- Visualizar -->
+                            </button>
+                        </li>
+                        <!-- <li class="list-group-item">
+                            Pivot
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="summary_figure" onclick="cis_page_redirect_function(this)">
+                                View
+                            </button>
+                        </li> -->
+                        <!-- <li class="list-group-item">
+                            Connection Pivot
+                            Pivô de conexão
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="connection_pivot" onclick="cis_page_redirect_function(this)">
+                                View
+                                Visualizar
+                            </button>
+                        </li> -->
+                        <!-- <li class="list-group-item">
+                            Billing Pivot -->
+                            <!-- Faturamento dinâmico -->
+                            <!-- <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="billing_pivot" onclick="cis_page_redirect_function(this)"> -->
+                                <!-- View -->
+                                <!-- Visualizar
+                            </button>
+                        </li> -->
+                        <!-- <li class="list-group-item"> -->
+                            <!-- Meter Details Pivot -->
+                            <!-- Pivô de detalhes do medidor -->
+                            <!-- <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="meter_details_pivot" onclick="cis_page_redirect_function(this)">
+                                View -->
+                                <!-- Visualizar -->
+                            <!-- </button>
+                        </li> -->
+                        <!-- <li class="list-group-item"> -->
+                            <!-- Meter State Pivot -->
+                            <!-- Meter State Pivot
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;"id="meter_state_pivot" onclick="cis_page_redirect_function(this)">
+                               View  -->
+                               <!-- Visualizar -->
+                            <!-- </button>
+                        </li> -->
+                        <!-- <li class="list-group-item">
+                            Meter Problems -->
+                            <!-- Problemas do medidor -->
+                            <!-- <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="meter_problems" onclick="cis_page_redirect_function(this)">
+                                View -->
+                                <!-- Visualizar -->
+                            <!-- </button> -->
+                        <!-- </li> -->
+                        <!-- <li class="list-group-item">
+                            Alternative Sources of Water -->
+                            <!-- Fontes alternativas de água -->
+                            <!-- <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id ="alternative_sources_of_water" onclick="cis_page_redirect_function(this)"> 
+                                View -->
+                                <!-- Visualizar -->
+                            <!-- </button>
+                        </li> -->
+                        <!-- <li class="list-group-item">
+                            Customer Satisfaction -->
+                            <!-- Satisfação do cliente -->
+                            <!-- <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="customer_satisfaction" onclick="cis_page_redirect_function(this)">
+                                View -->
+                                <!-- Visualizar -->
+                            <!-- </button>
+                        </li> -->
+                        <!-- <li class="list-group-item">
+                            Storage Tank -->
+                            <!-- Tanque de armazenamento -->
+                            <!-- <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="storage_tank" onclick="cis_page_redirect_function(this)">
+                                View -->
+                                <!-- Visualizar -->
+                            <!-- </button>
+                        </li> -->
+                        <!-- <li class="list-group-item">
+                            Water Supply Pivot
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="water_supply_pivot" onclick="cis_page_redirect_function(this)">
+                                View -->
+                                <!-- Visualizar -->
+                            <!-- </button>
+                        </li> -->
+                        <!-- <li class="list-group-item">
+                            Alternative Source for potentials
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="summary_figure" onclick="cis_page_redirect_function(this)">
+                                View
+                            </button>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <!-- end of cis analysis div -->
+
+            <!-- Database Analysis -->
+            <div style="padding:2%;">
+                <!-- Analysis title section -->
+                <h5>
+                2. Database Analysis 
+                <!-- 2. Análise de Banco de Dados -->
+                <button type="button" class="btn btn-info" style="float:right;font-size:12px;" data-toggle="collapse" href="#database_analysis_collapsable" role="button" aria-expanded="false" aria-controls="database_analysis_collapsable">
+                    View / Toggle
+                    <!-- Ver / Alternar -->
+                </button>
+                </h5>
+                <hr>
+                
+                <!-- Database Analysis collapsable section -->
+                <div id="database_analysis_collapsable" class="collapse" >
+                    <ul class="list-group">
+                        <!-- <li class="list-group-item">
+                            Analysis Guide -->
+                            <!-- Guia de Análise -->
+                            <!-- <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="database_analysis_guide_table" onclick="cis_page_redirect_function(this)">
+                                View -->
+                                <!-- Visualizar -->
+                            <!-- </button>
+                        </li> -->
+                        <li class="list-group-item">
+                            Billing Database
+                            <!-- Banco de dados de cobrança -->
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="billing_database" onclick="cis_page_redirect_function(this)">
+                                View
+                                <!-- Visualizar -->
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            Dashboard
+                            <!-- Painel -->
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="database_analysis" onclick="cis_page_redirect_function(this)">
+                                View
+                                <!-- Visualizar -->
+                            </button>
+                        </li>
+                        <!-- <li class="list-group-item">
+                            Pivot Tables
+                            <button type="button" class="btn btn-info" style="float: right;font-size:12px;" id="summary_figure" onclick="cis_page_redirect_function(this)">
+                                View
+                            </button>
+                        </li> -->
+            </div>
+            
+        </div>
+
+        
+    </div>
+</div>

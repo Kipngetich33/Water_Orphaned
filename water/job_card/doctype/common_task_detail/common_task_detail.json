@@ -1,0 +1,44 @@
+{
+ "autoname": "format:CTD-{##########}",
+ "creation": "2021-08-12 16:08:59.569925",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task_name",
+  "turnaround_estimate_in_days",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "turnaround_estimate_in_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Turnaround Estimate in Days",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-08-13 10:09:50.304893",
+ "modified_by": "Administrator",
+ "module": "Job Card",
+ "name": "Common Task Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

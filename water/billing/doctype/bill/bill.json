@@ -1,0 +1,134 @@
+{
+ "creation": "2021-08-03 12:52:59.391961",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "customer_account",
+  "customer",
+  "bill_type",
+  "column_break_4",
+  "last_meter_reading",
+  "current_meter_reading",
+  "consumption",
+  "bill_item_details_section",
+  "bill_item_details",
+  "total_bill",
+  "other_section",
+  "linked_sales_invoice",
+  "notification_sent"
+ ],
+ "fields": [
+  {
+   "fieldname": "total_bill",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Bill",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bill_item_details",
+   "fieldtype": "Table",
+   "label": "Bill Item Details",
+   "options": "Bill Item Detail"
+  },
+  {
+   "fieldname": "customer_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Account",
+   "options": "Customer Account"
+  },
+  {
+   "fieldname": "bill_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Bill Type",
+   "options": "\nWater Bill\nApplication Fee\nNew Connection Fee\nReconnection Fee\nActivation Fee\nPenalty\nOther"
+  },
+  {
+   "default": "Unpaid",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nUnpaid\nPaid\nAmended",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.bill_type == 'Water Bill';",
+   "fieldname": "last_meter_reading",
+   "fieldtype": "Float",
+   "label": "Last Meter Reading"
+  },
+  {
+   "depends_on": "eval:doc.bill_type == 'Water Bill';",
+   "fieldname": "current_meter_reading",
+   "fieldtype": "Float",
+   "label": "Current Meter Reading"
+  },
+  {
+   "depends_on": "eval:doc.bill_type == 'Water Bill';",
+   "fieldname": "consumption",
+   "fieldtype": "Float",
+   "label": "Consumption"
+  },
+  {
+   "fieldname": "bill_item_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bill Item Details"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "other_section",
+   "fieldtype": "Section Break",
+   "label": "Other"
+  },
+  {
+   "fieldname": "linked_sales_invoice",
+   "fieldtype": "Link",
+   "label": "Linked Sales Invoice",
+   "options": "Sales Invoice",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "notification_sent",
+   "fieldtype": "Check",
+   "label": "Notification Sent"
+  }
+ ],
+ "modified": "2022-03-18 13:39:55.899087",
+ "modified_by": "Administrator",
+ "module": "Billing",
+ "name": "Bill",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,727 @@
+{
+ "creation": "2021-08-20 12:38:20.537198",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ona_id_section_section",
+  "status",
+  "linked_customer_account",
+  "details_status",
+  "customer",
+  "customer_full_name",
+  "id_number",
+  "column_break_5",
+  "customer_phone_number",
+  "customer_type",
+  "plot_no",
+  "secondary_phone_number_1",
+  "secondary_phone_number_2",
+  "customer_email",
+  "seconday_phone_number_3",
+  "service_area_details_section",
+  "billing_area_1",
+  "billing_area_2",
+  "billing_area_3",
+  "billing_area_4",
+  "billing_area_5",
+  "billing_area_6",
+  "billing_area_7",
+  "billing_area_8",
+  "billing_area_9",
+  "billing_area_10",
+  "smallest_billing_area",
+  "billing_area",
+  "column_break_12",
+  "billing_area_confirmation",
+  "confirm_billing_area",
+  "unconfirm_billing_area",
+  "billing_area_transitioning",
+  "details_of_the_connection_or_potential_connection_section",
+  "meter",
+  "meter_installation_date",
+  "meter_reading_on_installation",
+  "column_break_16",
+  "meter_status",
+  "disconnection_level",
+  "disconnection_date",
+  "permanent_disconnection_date",
+  "mark_as_connected",
+  "mark_as_disconnected",
+  "mark_as_permanently_disconnected",
+  "connection_details_transitioning",
+  "sanitation_details_section",
+  "type_of_sanitation",
+  "onsite",
+  "none",
+  "onsite_category",
+  "septic",
+  "pit_latrine",
+  "choose_type_of_pit_latrine",
+  "traditional_pit_latrine",
+  "pit_latrine_with_slab",
+  "ventilated_improved_pit_latrine",
+  "composing_inlet",
+  "category_type_of_pit_latrine",
+  "individual_pit_latrine",
+  "shared_pit_latrine",
+  "choose_type_septic",
+  "pour_flush_toilet_to_septic_tank",
+  "flush_toilet_to_septic_tank",
+  "category_of_septic",
+  "individual_septic",
+  "shared_septic",
+  "septic_tank_system_accessibility",
+  "septic_tank_accessible_yes",
+  "septic_tank_accessible_no",
+  "column_break_49",
+  "sanitation_details_confirmation",
+  "confirm_sanitation_details",
+  "unconfirm_sanitation_details",
+  "sanitation_details_transitioning",
+  "gps_cordinates_remarks",
+  "gps_cordinates",
+  "gps_coordinate_of_the_meter_x",
+  "gps_coordinate_of_the_t_junction_y",
+  "x",
+  "y",
+  "column_break_75",
+  "latitude",
+  "longitude",
+  "altitude",
+  "accuracy",
+  "gps_coordinates_confirmed",
+  "confirm_coordinates",
+  "unconfirm_coordinates",
+  "gps_coordinates_details_transitioning",
+  "map_section_section",
+  "map_location",
+  "other_section",
+  "remarks",
+  "transitioning",
+  "pulled_details_from_customer_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "ona_id_section_section",
+   "fieldtype": "Section Break",
+   "label": "General Section"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "service_area_details_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Area Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "details_of_the_connection_or_potential_connection_section",
+   "fieldtype": "Section Break",
+   "label": "Connection Details"
+  },
+  {
+   "default": "Disconnected",
+   "fieldname": "meter_status",
+   "fieldtype": "Select",
+   "label": "Meter Status",
+   "options": "\nConnected\nDisconnected\nPermanently Disconnected",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sanitation_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sanitation Details"
+  },
+  {
+   "fieldname": "type_of_sanitation",
+   "fieldtype": "Heading",
+   "label": "Type of sanitation"
+  },
+  {
+   "depends_on": "onsite",
+   "fieldname": "onsite_category",
+   "fieldtype": "Heading",
+   "label": "Onsite category",
+   "options": "\n"
+  },
+  {
+   "depends_on": "pit_latrine",
+   "fieldname": "choose_type_of_pit_latrine",
+   "fieldtype": "Heading",
+   "label": "Type of Pit Latrine"
+  },
+  {
+   "depends_on": "pit_latrine",
+   "fieldname": "category_type_of_pit_latrine",
+   "fieldtype": "Heading",
+   "label": "Category type of pit latrine",
+   "options": "\n"
+  },
+  {
+   "depends_on": "septic",
+   "fieldname": "choose_type_septic",
+   "fieldtype": "Heading",
+   "label": "Choose type septic",
+   "options": "\n"
+  },
+  {
+   "depends_on": "septic",
+   "fieldname": "category_of_septic",
+   "fieldtype": "Heading",
+   "label": "Category of septic",
+   "options": "\n"
+  },
+  {
+   "depends_on": "septic",
+   "fieldname": "septic_tank_system_accessibility",
+   "fieldtype": "Heading",
+   "label": "Septic tank system accessibility",
+   "options": "\n"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "gps_cordinates_remarks",
+   "fieldtype": "Section Break",
+   "label": "GPS Cordinates Section"
+  },
+  {
+   "fieldname": "gps_cordinates",
+   "fieldtype": "Data",
+   "label": "GPS cordinates"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nDraft\nPending Connection\nConnected\nPending Activation\nActive\nPending Disconnection\nDisconnected\nPending Permanent Disconnection\nDormant",
+   "read_only": 1
+  },
+  {
+   "fieldname": "linked_customer_account",
+   "fieldtype": "Link",
+   "label": "Customer Account",
+   "options": "Customer Account",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "smallest_billing_area",
+   "fieldtype": "Heading",
+   "label": "Selected Billing Area"
+  },
+  {
+   "default": "0",
+   "depends_on": "onsite",
+   "fieldname": "septic",
+   "fieldtype": "Check",
+   "label": "Septic"
+  },
+  {
+   "default": "0",
+   "depends_on": "onsite",
+   "fieldname": "pit_latrine",
+   "fieldtype": "Check",
+   "label": "Pit Latrine"
+  },
+  {
+   "default": "0",
+   "depends_on": "pit_latrine",
+   "fieldname": "traditional_pit_latrine",
+   "fieldtype": "Check",
+   "label": "Traditional pit latrine"
+  },
+  {
+   "default": "0",
+   "depends_on": "pit_latrine",
+   "fieldname": "pit_latrine_with_slab",
+   "fieldtype": "Check",
+   "label": "Pit latrine with slab"
+  },
+  {
+   "default": "0",
+   "depends_on": "pit_latrine",
+   "fieldname": "ventilated_improved_pit_latrine",
+   "fieldtype": "Check",
+   "label": "Ventilated improved pit latrine"
+  },
+  {
+   "default": "0",
+   "depends_on": "pit_latrine",
+   "fieldname": "individual_pit_latrine",
+   "fieldtype": "Check",
+   "label": "Individual"
+  },
+  {
+   "default": "0",
+   "depends_on": "pit_latrine",
+   "fieldname": "shared_pit_latrine",
+   "fieldtype": "Check",
+   "label": "Shared"
+  },
+  {
+   "default": "0",
+   "depends_on": "septic",
+   "fieldname": "pour_flush_toilet_to_septic_tank",
+   "fieldtype": "Check",
+   "label": "Pour Flush toilet to Septic tank"
+  },
+  {
+   "default": "0",
+   "depends_on": "septic",
+   "fieldname": "flush_toilet_to_septic_tank",
+   "fieldtype": "Check",
+   "label": "Flush toilet to Septic tank"
+  },
+  {
+   "default": "0",
+   "depends_on": "septic",
+   "fieldname": "individual_septic",
+   "fieldtype": "Check",
+   "label": "Individual"
+  },
+  {
+   "default": "0",
+   "depends_on": "septic",
+   "fieldname": "shared_septic",
+   "fieldtype": "Check",
+   "label": "Shared"
+  },
+  {
+   "default": "0",
+   "depends_on": "septic",
+   "fieldname": "septic_tank_accessible_yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "depends_on": "septic",
+   "fieldname": "septic_tank_accessible_no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "default": "0",
+   "fieldname": "onsite",
+   "fieldtype": "Check",
+   "label": "Onsite"
+  },
+  {
+   "default": "0",
+   "fieldname": "none",
+   "fieldtype": "Check",
+   "label": "None"
+  },
+  {
+   "default": "0",
+   "depends_on": "pit_latrine",
+   "fieldname": "composing_inlet",
+   "fieldtype": "Check",
+   "label": "Composing inlet"
+  },
+  {
+   "fieldname": "gps_coordinate_of_the_meter_x",
+   "fieldtype": "Data",
+   "label": "GPS Coordinate of the Meter X"
+  },
+  {
+   "fieldname": "gps_coordinate_of_the_t_junction_y",
+   "fieldtype": "Data",
+   "label": "GPS Coordinate of the T Junction Y"
+  },
+  {
+   "fieldname": "x",
+   "fieldtype": "Data",
+   "label": "X"
+  },
+  {
+   "fieldname": "y",
+   "fieldtype": "Data",
+   "label": "Y"
+  },
+  {
+   "fieldname": "column_break_75",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude (x.y \u00b0)"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude (x.y \u00b0)"
+  },
+  {
+   "fieldname": "altitude",
+   "fieldtype": "Data",
+   "label": "Altitude (m)"
+  },
+  {
+   "fieldname": "accuracy",
+   "fieldtype": "Data",
+   "label": "Accuracy (m)"
+  },
+  {
+   "fieldname": "map_section_section",
+   "fieldtype": "Section Break",
+   "label": "Map Section"
+  },
+  {
+   "fieldname": "map_location",
+   "fieldtype": "Geolocation",
+   "label": "Map Location"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "other_section",
+   "fieldtype": "Section Break",
+   "label": "Other "
+  },
+  {
+   "fieldname": "meter_installation_date",
+   "fieldtype": "Date",
+   "label": "Meter Installation Date"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer ",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meter",
+   "fieldtype": "Link",
+   "label": "Meter",
+   "options": "Meter"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "transitioning",
+   "fieldtype": "Check",
+   "label": "Transitioning",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "pulled_details_from_customer_account",
+   "fieldtype": "Check",
+   "label": "Pulled Details from Customer Account",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.meter_status == 'Disconnected';",
+   "fieldname": "mark_as_connected",
+   "fieldtype": "Button",
+   "label": "Mark as Connected"
+  },
+  {
+   "depends_on": "eval:doc.meter_status == 'Connected';",
+   "fieldname": "mark_as_disconnected",
+   "fieldtype": "Button",
+   "label": "Mark as Disconnected"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Unconfirmed",
+   "fieldname": "billing_area_confirmation",
+   "fieldtype": "Select",
+   "label": "Billing Area Confirmation",
+   "options": "\nConfirmed\nUnconfirmed",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.billing_area_confirmation == 'Unconfirmed';",
+   "fieldname": "confirm_billing_area",
+   "fieldtype": "Button",
+   "label": "Confirm Billing Area"
+  },
+  {
+   "depends_on": "eval:doc.billing_area_confirmation == 'Confirmed';",
+   "fieldname": "unconfirm_billing_area",
+   "fieldtype": "Button",
+   "label": "Unconfirm Billing Area"
+  },
+  {
+   "default": "Unconfirmed",
+   "fieldname": "gps_coordinates_confirmed",
+   "fieldtype": "Select",
+   "label": "GPS Coordinates Confirmed",
+   "options": "\nConfirmed\nUnconfirmed",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.gps_coordinates_confirmed == 'Unconfirmed';",
+   "fieldname": "confirm_coordinates",
+   "fieldtype": "Button",
+   "label": "Confirm Coordinates"
+  },
+  {
+   "depends_on": "eval:doc.gps_coordinates_confirmed == 'Confirmed';",
+   "fieldname": "unconfirm_coordinates",
+   "fieldtype": "Button",
+   "label": "Unconfirm Coordinates"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Unconfirmed",
+   "fieldname": "sanitation_details_confirmation",
+   "fieldtype": "Select",
+   "label": "Sanitation Details Confirmation",
+   "options": "\nConfirmed\nUnconfirmed",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.sanitation_details_confirmation == 'Unconfirmed';",
+   "fieldname": "confirm_sanitation_details",
+   "fieldtype": "Button",
+   "label": "Confirm Sanitation Details"
+  },
+  {
+   "depends_on": "eval:doc.sanitation_details_confirmation == 'Confirmed';",
+   "fieldname": "unconfirm_sanitation_details",
+   "fieldtype": "Button",
+   "label": "Unconfirm Sanitation Details"
+  },
+  {
+   "fieldname": "billing_area",
+   "fieldtype": "Link",
+   "label": "Billing Area",
+   "options": "Billing Area",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "billing_area_transitioning",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Billing Area Transitioning"
+  },
+  {
+   "default": "0",
+   "fieldname": "connection_details_transitioning",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Connection Details Transitioning"
+  },
+  {
+   "default": "0",
+   "fieldname": "sanitation_details_transitioning",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Sanitation Details Transitioning"
+  },
+  {
+   "default": "0",
+   "fieldname": "gps_coordinates_details_transitioning",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "GPS Coordinates Details Transitioning"
+  },
+  {
+   "fieldname": "meter_reading_on_installation",
+   "fieldtype": "Data",
+   "label": "Meter Reading on Installation"
+  },
+  {
+   "fieldname": "billing_area_1",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 1)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_1",
+   "fieldname": "billing_area_2",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 2)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_2",
+   "fieldname": "billing_area_3",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 3)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_3",
+   "fieldname": "billing_area_4",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 4)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_4",
+   "fieldname": "billing_area_5",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 5)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_5",
+   "fieldname": "billing_area_6",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 6)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_6",
+   "fieldname": "billing_area_7",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 7)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_7",
+   "fieldname": "billing_area_8",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level  8)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_8",
+   "fieldname": "billing_area_9",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 9)",
+   "options": "Billing Area"
+  },
+  {
+   "depends_on": "billing_area_9",
+   "fieldname": "billing_area_10",
+   "fieldtype": "Link",
+   "label": "Billing Area (Level 10)",
+   "options": "Billing Area"
+  },
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Link",
+   "label": "Customer Type",
+   "options": "Customer Type"
+  },
+  {
+   "depends_on": "eval:doc.disconnection_level == 2;",
+   "fieldname": "mark_as_permanently_disconnected",
+   "fieldtype": "Button",
+   "label": "Mark as Permanently Disconnected"
+  },
+  {
+   "default": "0",
+   "fieldname": "disconnection_level",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Disconnection level"
+  },
+  {
+   "depends_on": "eval:doc.meter_status == 'Disconnected';",
+   "fieldname": "disconnection_date",
+   "fieldtype": "Date",
+   "label": "Disconnection Date",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.disconnection_level == 3;",
+   "fieldname": "permanent_disconnection_date",
+   "fieldtype": "Date",
+   "label": "Permanent Disconnection Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID Number "
+  },
+  {
+   "fieldname": "plot_no",
+   "fieldtype": "Data",
+   "label": "Plot No"
+  },
+  {
+   "default": "Current",
+   "fieldname": "details_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Details Status",
+   "options": "\nCurrent\nArchived",
+   "read_only": 1
+  },
+  {
+   "fieldname": "secondary_phone_number_1",
+   "fieldtype": "Data",
+   "label": "Secondary Phone Number 1(Optional)"
+  },
+  {
+   "fieldname": "secondary_phone_number_2",
+   "fieldtype": "Data",
+   "label": "Secondary Phone Number 2(Optional)"
+  },
+  {
+   "fieldname": "seconday_phone_number_3",
+   "fieldtype": "Data",
+   "label": "Seconday Phone Number 3(Optional)"
+  }
+ ],
+ "modified": "2022-03-17 17:46:05.890643",
+ "modified_by": "Administrator",
+ "module": "Billing",
+ "name": "Customer Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "customer_full_name",
+ "track_changes": 1
+}

@@ -1,0 +1,102 @@
+{
+ "autoname": "field:billing_area_name",
+ "creation": "2021-08-03 12:47:56.655292",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "billing_area_name",
+  "title",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_billing_area",
+  "root_area"
+ ],
+ "fields": [
+  {
+   "fieldname": "billing_area_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Billing Area Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "Billing Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parent_billing_area",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Parent Billing Area",
+   "options": "Billing Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "default": "0",
+   "fieldname": "root_area",
+   "fieldtype": "Check",
+   "label": "Root Area",
+   "read_only": 1
+  }
+ ],
+ "is_tree": 1,
+ "modified": "2021-09-14 18:24:59.302706",
+ "modified_by": "Administrator",
+ "module": "Billing",
+ "name": "Billing Area",
+ "nsm_parent_field": "parent_billing_area",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "billing_area_name",
+ "track_changes": 1
+}
