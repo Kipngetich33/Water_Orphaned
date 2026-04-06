@@ -5,7 +5,6 @@
 from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
-from redis.client import parse_sentinel_slaves_and_sentinels
 
 class BillItem(Document):
 	'''

@@ -1,7 +1,6 @@
 import frappe
 
 #application level imports
-from notification.sms.custom_methods.send_sms import SMSClass
 from erpnext.accounts.utils import get_balance_on
 from water.custom_methods.reusable_methods import get_settings
 
@@ -193,6 +192,7 @@ def notify_customer_of_their_balance(payment_entry):
     message += "Regards {}".format(mobile_money_settings.company)
 
     #send notitification as a background job
+    from notification.sms.custom_methods.send_sms import SMSClass
     sms_instance = SMSClass()
     sms_instance.message_sending_handler(message,[formated_number])
     

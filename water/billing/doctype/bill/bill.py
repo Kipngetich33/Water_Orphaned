@@ -11,7 +11,6 @@ import datetime
 
 #application imports
 from erpnext.accounts.utils import get_balance_on
-from notification.sms.custom_methods.send_sms import SMSClass
 from ....custom_methods.reusable_methods import get_erpnext_customer_from_customer_account,\
 	get_settings
 
@@ -130,6 +129,7 @@ class Bill(Document):
 		customer_phone_number = customer_details_doc[0]['customer_phone_number']
 		formated_number = "+254"+customer_phone_number[1:]
 		#send notitification as a background job
+		from notification.sms.custom_methods.send_sms import SMSClass
 		sms_instance = SMSClass()
 		sms_instance.message_sending_handler(message,[formated_number])
 		#mark notification as sent

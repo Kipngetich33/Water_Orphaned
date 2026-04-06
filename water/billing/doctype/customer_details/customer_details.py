@@ -5,7 +5,6 @@
 from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
-from ....custom_methods.reusable_methods import validate_fields
 from water.utils import enqueue_update_geometry_field
 
 class CustomerDetails(Document):
