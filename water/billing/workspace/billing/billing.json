@@ -1,0 +1,200 @@
+{
+ "app": "water",
+ "charts": [],
+ "content": "[{\"id\":\"billing_header_1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Billing</b></span>\",\"col\":12}},{\"id\":\"billing_card_1\",\"type\":\"card\",\"data\":{\"card_name\":\"Billing Transactions\",\"col\":4}},{\"id\":\"billing_card_2\",\"type\":\"card\",\"data\":{\"card_name\":\"Billing Masters\",\"col\":4}},{\"id\":\"billing_card_3\",\"type\":\"card\",\"data\":{\"card_name\":\"Billing Settings\",\"col\":4}},{\"id\":\"billing_header_2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports</b></span>\",\"col\":12}},{\"id\":\"billing_card_4\",\"type\":\"card\",\"data\":{\"card_name\":\"Billing Reports\",\"col\":4}}]",
+ "creation": "2026-04-06 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "billing",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Billing",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Billing Transactions",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bill",
+   "link_count": 0,
+   "link_to": "Bill",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Billing Actions",
+   "link_count": 0,
+   "link_to": "Billing Actions",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Account",
+   "link_count": 0,
+   "link_to": "Customer Account",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Details",
+   "link_count": 0,
+   "link_to": "Customer Details",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Billing Masters",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Billing Period",
+   "link_count": 0,
+   "link_to": "Billing Period",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Billing Area",
+   "link_count": 0,
+   "link_to": "Billing Area",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bill Type",
+   "link_count": 0,
+   "link_to": "Bill Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Type",
+   "link_count": 0,
+   "link_to": "Customer Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Billing Settings",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Billing Settings",
+   "link_count": 0,
+   "link_to": "Billing Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "System Error Log",
+   "link_count": 0,
+   "link_to": "System Error Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Billing Reports",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Customer Pending Permanent Disconnection",
+   "link_count": 0,
+   "link_to": "Customer Pending Permanent Disconnection",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "module": "Billing",
+ "name": "Billing",
+ "number_cards": [],
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "format": "{} Active",
+   "label": "Bill",
+   "link_to": "Bill",
+   "stats_filter": "{\"status\": \"Active\"}",
+   "type": "DocType"
+  },
+  {
+   "label": "Customer Account",
+   "link_to": "Customer Account",
+   "type": "DocType"
+  },
+  {
+   "label": "Billing Period",
+   "link_to": "Billing Period",
+   "type": "DocType"
+  }
+ ],
+ "title": "Billing"
+}
