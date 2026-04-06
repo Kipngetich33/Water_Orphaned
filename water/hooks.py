@@ -4,11 +4,11 @@ from . import __version__ as app_version
 
 app_name = "water"
 app_title = "Water"
-app_publisher = "Upande LTD."
+app_publisher = "Titansoft"
 app_description = "application for water utilities"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "dev@upande.com"
+app_email = ""
 app_license = "Proprietary"
 
 # Includes in <head>
